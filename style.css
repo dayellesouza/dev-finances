@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 93.75%;
+    font-size: 93.75%; /*15px*/
 }
 
 body {
@@ -43,7 +43,6 @@ h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
     color: var(--dark-blue);
-
     font-weight: normal;
 
 }
@@ -61,20 +60,15 @@ a:hover {
 button {
     width: 100%;
     height: 50px;
-
     border: none;
-
     color: white;
     background: var(--green);
-
     padding: 0;
-
     border-radius: 0.25rem;
-
     cursor: pointer;
 }
 
-.button:hover {
+button:hover {
     background: var(--light-green);
 }
 
@@ -87,14 +81,11 @@ button {
     color: var(--red);
     border: 2px var(--red) solid;
     border-radius: 0.25rem;
-
     height: 50px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .button.cancel:hover {
@@ -167,7 +158,7 @@ header {
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #969cb3;
+    color: var(--dark-blue);
 
 }
 
@@ -201,7 +192,6 @@ table tbody tr:hover {
 table tbody td {
     background: white;
     padding: 1rem 2rem;
-    font-weight: normal;
 }
 
 td.description {
@@ -213,15 +203,16 @@ td.income {
 }
 
 td.expense {
-    color: #e92929;
+    color: var(--red);
 }
 
 /* Model ======================================== */
+
 .modal-overlay {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0,0,0,0,7);
+    background-color: rgba(0, 0, 0, 0.7);
 
     position: fixed;
     top: 0;
@@ -244,9 +235,6 @@ td.expense {
 .modal {
     background: #f0f2f5;
     padding: 2.4rem;
-    max-width: 90%;
-    max-width: 500px;
-
     position: relative;
     z-index: 1;
 }
@@ -258,7 +246,12 @@ td.expense {
 
 #form h2 {
     margin-top: 0;
+    
 }
+#form h2:hover{
+    color: white
+}
+
 input {
     border: none;
     border-radius: 0.2rem;
@@ -286,7 +279,6 @@ input {
 .input-group.actions button {
     width: 48%;
 }
-
 
 /* Footer ======================================== */
 footer {
